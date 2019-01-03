@@ -1,0 +1,12 @@
+number: 5
+
+main:
+  servers:
+    - server1
+    - server2
+  secure: yes
+  domain: domain.tld
+
+dosomething:
+  repeat: 3
+  sentance: The quick brown fox jumped over the lazy dog.
