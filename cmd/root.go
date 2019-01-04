@@ -30,7 +30,7 @@ type ConfigTreeMain struct {
 
 type ConfigTreeDoSomething struct {
 	Repeat   int
-	Sentance string
+	Sentence string
 }
 
 type ConfigTree struct {
@@ -45,9 +45,9 @@ var cfgTree ConfigTree
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "gocobra-exp",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "Experimenting with Cobra.",
+	Long: `Experimenting with building Go applications with Cobra.
+This is for me to work out problems in an simple, controlled environment.
 
 Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
@@ -115,5 +115,5 @@ func mainConfigPrint(cmd *cobra.Command, args []string) {
 	fmt.Printf("root.Main.Secure: %t\n", cfgTree.Main.Secure)
 	fmt.Printf("root.Main.Domain: %s\n", cfgTree.Main.Domain)
 	fmt.Printf("root.DoSomething.Repeat: %d\n", cfgTree.DoSomething.Repeat)
-	fmt.Printf("root.DoSomething.Sentance: %s\n", cfgTree.DoSomething.Sentance)
+	fmt.Printf("root.DoSomething.Sentence: %s\n", cfgTree.DoSomething.Sentence)
 }
