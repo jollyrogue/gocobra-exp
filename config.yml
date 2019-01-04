@@ -9,4 +9,4 @@ main:
 
 dosomething:
   repeat: 3
-  sentance: The quick brown fox jumped over the lazy dog.
+  sentence: The quick brown fox jumped over the lazy dog.
