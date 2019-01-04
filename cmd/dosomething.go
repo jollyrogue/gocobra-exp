@@ -47,5 +47,10 @@ func init() {
 
 func doSomethingMain(cmd *cobra.Command, args []string) {
 	fmt.Println("dosomething called")
-	fmt.Printf("Config Tree: %+v\n", cfgTree)
+	fmt.Printf("Printing Config Tree: %+v\n", cfgTree)
+	fmt.Println("")
+
+	for i := 0; i < cfgTree.DoSomething.Repeat; i++ {
+		fmt.Println(cfgTree.Number*i, cfgTree.DoSomething.Sentence)
+	}
 }
