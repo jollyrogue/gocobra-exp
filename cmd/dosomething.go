@@ -18,6 +18,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // dosomethingCmd represents the dosomething command
@@ -46,7 +47,11 @@ func init() {
 }
 
 func doSomethingMain(cmd *cobra.Command, args []string) {
+	value := viper.GetString("number")
+	fmt.Printf("Viper test: %s\n", value)
 	fmt.Println("dosomething called")
+	value := viper.GetString("number")
+	fmt.Printf("Viper test: %s\n", value)
 	fmt.Printf("Printing Config Tree: %+v\n", cfgTree)
 	fmt.Println("")
 
